@@ -1,0 +1,24 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ACTUAL_HEADLESS_READING Acc (0.0, 0.0, 0.0)
+PASS raw label AccX
+PASS raw label AccY
+PASS raw label AccZ
+ACTUAL_HEADLESS_READING Grav (0.0, 0.0, 0.0)
+PASS raw label GravX
+PASS raw label GravY
+PASS raw label GravZ
+ACTUAL_HEADLESS_READING Mag (0.0, 0.0, 0.0)
+PASS raw label MagX
+PASS raw label MagY
+PASS raw label MagZ
+ACTUAL_HEADLESS_READING Gyro (0.0, 0.0, 0.0)
+PASS raw label GyroX
+PASS raw label GyroY
+PASS raw label GyroZ
+PASS finite orientation Arrows/AccelerometerArrow
+PASS finite orientation Arrows/MagnetoArrow
+PASS finite orientation Arrows/NorthArrow
+PASS finite orientation Boxes/MagAndGrav
+PASS finite orientation Boxes/GyroAndGrav
+HEADLESS FALLBACK ONLY; no sensor values injected, physical motion/sensor accuracy and films unverified; failures=0

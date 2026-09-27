@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="t d">
+<title id="t">Per-frame sensor pipeline · S-01, M-01..M-06</title>
+<desc id="d">Recovered from main.gd _process. Solid = code path; the fallback branch is the only one Walker has observed (headless, all readings zero). IDs: S-01, M-01, M-02, M-03, M-04, M-05, M-06.</desc>
+<rect width="1400" height="800" fill="#faf9f5"/>
+<defs>
+<marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#25354a"/></marker>
+<marker id="p" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2456c8"/></marker>
+</defs>
+<g font-family="Helvetica, Arial, sans-serif" fill="#25354a">
+<text x="40" y="50" font-size="28" font-weight="700">Per-frame sensor pipeline · S-01, M-01..M-06</text>
+<text x="40" y="78" font-size="15" fill="#5b6b7c">Recovered from main.gd _process. Solid = code path; the fallback branch is the only one Walker has observed (headless, all readings zero).</text>
+<text x="40" y="776" font-size="14" fill="#5b6b7c">solid = observed in code · dashed = proposed / unverified · IDs: S-01, M-01, M-02, M-03, M-04, M-05, M-06</text>
+<path d="M210 265 L210 380" stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<rect x="169" y="306" width="83" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="210" y="318" font-size="13" text-anchor="middle" fill="#5b6b7c">every frame</text>
+<path d="M360 220 L480 220" stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<rect x="356" y="204" width="129" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="420" y="216" font-size="13" text-anchor="middle" fill="#5b6b7c">near-zero readings</text>
+<path d="M309 265 L562 380" stroke="#2456c8" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<rect x="394" y="306" width="83" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="436" y="318" font-size="13" text-anchor="middle" fill="#2456c8">real device</text>
+<path d="M820 198 L950 181" stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M820 261 L950 292" stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M732 270 L1036 455" stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M800 446 L950 472" stroke="#2456c8" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<path d="M1110 545 L1110 640" stroke="#2456c8" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<rect x="1075" y="576" width="69" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="1110" y="588" font-size="13" text-anchor="middle" fill="#2456c8">edge case</text>
+<rect x="60" y="175" width="300" height="90" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="210" y="210" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">READ SENSORS</text>
+<text x="210" y="232" font-size="13" text-anchor="middle" fill="#5b6b7c">accelerometer · gravity</text>
+<text x="210" y="248" font-size="13" text-anchor="middle" fill="#5b6b7c">magnetometer · gyroscope</text>
+<rect x="70" y="380" width="280" height="80" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="210" y="418" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">RAW TABLE</text>
+<text x="210" y="440" font-size="13" text-anchor="middle" fill="#5b6b7c">12 labels, %.05f</text>
+<rect x="480" y="170" width="340" height="100" rx="12" fill="#ffffff" stroke="#25354a" stroke-width="3"/>
+<text x="650" y="202" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">FALLBACKS</text>
+<text x="650" y="224" font-size="13" text-anchor="middle" fill="#5b6b7c">grav &lt; 0.1: acc, else (0,-1,0)</text>
+<text x="650" y="240" font-size="13" text-anchor="middle" fill="#5b6b7c">mag &lt; 0.1: (1,0,0)</text>
+<text x="650" y="256" font-size="13" text-anchor="middle" fill="#5b6b7c">(observed headless)</text>
+<rect x="500" y="380" width="300" height="80" rx="12" fill="#fffdf7" stroke="#2456c8" stroke-width="2.2" stroke-dasharray="9 7"/>
+<text x="650" y="410" font-size="19" font-weight="700" text-anchor="middle" fill="#2456c8">REAL READINGS</text>
+<text x="650" y="432" font-size="13" text-anchor="middle" fill="#5b6b7c">phone sensors</text>
+<text x="650" y="448" font-size="13" text-anchor="middle" fill="#5b6b7c">never observed · Q-06</text>
+<rect x="950" y="115" width="320" height="90" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="1110" y="150" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">ARROWS</text>
+<text x="1110" y="172" font-size="13" text-anchor="middle" fill="#5b6b7c">gravity (green) · mag (blue)</text>
+<text x="1110" y="188" font-size="13" text-anchor="middle" fill="#5b6b7c">north = (g×m)×g (yellow)</text>
+<rect x="950" y="290" width="320" height="80" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="1110" y="328" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">BOX: MAG + GRAV</text>
+<text x="1110" y="350" font-size="13" text-anchor="middle" fill="#5b6b7c">y=-g, x=y×m, z=x×y</text>
+<rect x="950" y="455" width="320" height="90" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="1110" y="490" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">BOX: GYRO + GRAV</text>
+<text x="1110" y="512" font-size="13" text-anchor="middle" fill="#5b6b7c">integrate -gyro·dt</text>
+<text x="1110" y="528" font-size="13" text-anchor="middle" fill="#5b6b7c">then drift_correction</text>
+<rect x="950" y="640" width="320" height="80" rx="12" fill="#fffdf7" stroke="#2456c8" stroke-width="2.2" stroke-dasharray="9 7"/>
+<text x="1110" y="670" font-size="19" font-weight="700" text-anchor="middle" fill="#2456c8">UPSIDE DOWN / NaN</text>
+<text x="1110" y="692" font-size="13" text-anchor="middle" fill="#5b6b7c">dot = -1 or float overshoot</text>
+<text x="1110" y="708" font-size="13" text-anchor="middle" fill="#5b6b7c">unverified · Q-08</text>
+</g></svg>
